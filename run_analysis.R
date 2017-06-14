@@ -1,8 +1,8 @@
 ## Create directory, Download File and unzip it
-if(!file.exists("./proj")){dir.create("./proj")}
+if(!file.exists("./proj")) {dir.create("./proj")}
 fileUrl <- "https://d396qusza40orc.cloudfront.net/getdata%2Fprojectfiles%2FUCI%20HAR%20Dataset.zip"
-download.file(fileUrl,destfile="./proj/data.zip")
-unzip(zipfile="./proj/data.zip",exdir="./proj")
+download.file(fileUrl, destfile="./proj/data.zip")
+unzip(zipfile="./proj/data.zip", exdir="./proj")
 
 ## Set Working Directory
 setwd("./proj/UCI HAR Dataset")
